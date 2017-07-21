@@ -50,7 +50,7 @@ Following things have been followed to develop this project.
 			* gulp-concat - npm install --global gulp-concat
 			* gulp-less - npm install --global gulp-less
 			* gulp-sass - npm instal --global gulp-sass 
-			
+
 
 # The assignment
 
@@ -64,7 +64,7 @@ Part 2: Feed Processing
 
 The feed processing function should be able to handle very large feeds of a fixed format. For an example feed, the following test can be used:
 
-http://pf.tradetracker.net/?aid=1&type=xml&encoding=utf- 8&fid=251713&categoryType=2&additionalType=2
+Given URL LINK http://pf.tradetracker.net/?aid=1&type=xml&encoding=utf- 8&fid=251713&categoryType=2&additionalType=2
 
 The feed is a few hundred megabytes large and contains thousands of products. The basic structure of the feed is described in appendix section.
 
