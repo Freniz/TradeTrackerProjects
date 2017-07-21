@@ -48,6 +48,11 @@
   width: 100%;
   height: auto;
 }
+.processtime {
+  position: fixed;
+  top: -10px;
+  right: 0;
+}
 #trade-navbar {
   background-color: #ee3823;
   color: #FFFFFF;
