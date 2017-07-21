@@ -33,6 +33,7 @@ Following things have been followed to develop this project.
 	Require:
 		have used Node to install the following packages
 			follow the document to install node - https://nodejs.org/en/
+			
 			* gulp - npm install --global gulp
 			* gulp-concat - npm install --global gulp-concat
 			* gulp-less - npm install --global gulp-less
@@ -64,7 +65,8 @@ b) Zend
 
 
 Document to read 
-	* AngularJs - https://docs.angularjs.org/tutorial/step_02
+	 AngularJs - https://docs.angularjs.org/tutorial/step_02
+	
 	* Boostrap - http://getbootstrap.com/components/
 	* Symfony - https://symfony.com/doc/3.1/index.html
 	* less - http://lesscss.org/
