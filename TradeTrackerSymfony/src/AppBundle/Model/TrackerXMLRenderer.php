@@ -42,13 +42,14 @@ class TrackerXMLRenderer
     {
         return '<div class="col-md-3 col-sm-4">
                    <div id="single-trade-item" class="single-trade-item">
+                            <h5>Id: <span class="text-info">'.$node->productID.'</span><h5>
                             <div class="trade-thumnail">
                                 <a href="'.$this->urlDecode($node->productURL).'" target="_blank"><img class="trade-img" src="'.$node->imageURL.'" alt="trade-img"></a>
                             </div>
                             <div class="trade-content">
-                                <h4><a href="'.$this->urlDecode($node->productURL).'" target="_blank">'.$this->trimString($node->name, '30').'</a></h4>
+                                <h4><a href="'.$this->urlDecode($node->productURL).'" title="'.$node->name.'" target="_blank">'.$this->trimString($node->name, '30').'</a></h4>
                                 <h5><span class="text-info">'.ucfirst($node->categories->category->attributes()->path).'</span><h5>
-                                <p>'.$this->trimString($node->description, '70').'</p>
+                                <p title="'.$node->description.'">'.$this->trimString($node->description, '70').'</p>
                                 <a href="'.$this->urlDecode($node->productURL).'" target="_blank" class="more-btn">View More</a>
                             </div>
                             <span class="trade-currency">'.$this->currencySign($node->price->attributes()->currency).' '.$node->price.'</span>
