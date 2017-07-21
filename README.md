@@ -26,12 +26,19 @@ Following things have been followed to develop this project.
 
 	Followed this document - https://docs.docker.com/get-started/
 
-	* docker pull abdulnizam/tradetracker:zendframework for zend
-	* docker pull abdulnizam/tradetracker:symfony for symfony
+	Tags
+		* docker pull abdulnizam/tradetracker:zendframework for zend
+		* docker pull abdulnizam/tradetracker:symfony for symfony
 
 	a) <a href="https://github.com/Freniz/TradeTrackerProjects/blob/integration/DockerFile/symfony/Dockerfile">Dockerfile-Symfony</a>
 
 	b) <a href="https://github.com/Freniz/TradeTrackerProjects/blob/integration/DockerFile/zend/Dockerfile">Dockerfile-Zend</a>
+
+	To run the docker file 
+	
+		1) docker build -t tradetracker:{tag} . eg, docker build -t tradetracker:symfony .
+		2) docker run -p {port}:80 tradetracker:{tag} eg, docker run -p 8002:80 tradetracker:symfony
+
 
 11) Have used gulp to compile the CSS pre-processor
 	Require:
