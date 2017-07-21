@@ -5,6 +5,7 @@ class Tracker_XMLRenderer
     protected $xmlrender;
     public function __construct($url)
     {
+        $this->timeFirst  = strtotime(date("Y-m-d H:i:s"));
         $this->xmlrender = new XMLReader;
         $this->xmlrender->open($url);
         //$this->xmlrender->open('http://pf.tradetracker.net/?aid=1&type=xml&encoding=utf-8&fid=251713&limit=10000');
@@ -21,6 +22,9 @@ class Tracker_XMLRenderer
             echo $this->renderNode($node);
             $this->xmlrender->next('product');
         }
+        $this->timeSecond = strtotime(date("Y-m-d H:i:s"));
+        $differenceInSeconds = $this->timeSecond - $this->timeFirst;
+        return $differenceInSeconds;
     }
 
     public function renderNode($node)
