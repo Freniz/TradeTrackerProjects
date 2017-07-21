@@ -28,12 +28,14 @@ Following things have been followed to develop this project.
 
 	Tags - <a href="https://hub.docker.com/r/abdulnizam/tradetracker/tags/" target="_blank">Abdulnizam-Docker-hub</a>
 
+	Docker Projects - <a href="https://github.com/Freniz/TradeTrackerDockerProjects">Docker Projects</a>
+
 		* docker pull abdulnizam/tradetracker:zendframework for zend
 		* docker pull abdulnizam/tradetracker:symfony for symfony
 
-	a) <a href="https://github.com/Freniz/TradeTrackerProjects/blob/integration/DockerFile/symfony/Dockerfile">Dockerfile-Symfony</a>
+	a) <a href="https://github.com/Freniz/TradeTrackerProjects/blob/integration/DockerFiles/symfony/Dockerfile">Dockerfile-Symfony</a>
 
-	b) <a href="https://github.com/Freniz/TradeTrackerProjects/blob/integration/DockerFile/zend/Dockerfile">Dockerfile-Zend</a>
+	b) <a href="https://github.com/Freniz/TradeTrackerProjects/blob/integration/DockerFiles/zend/Dockerfile">Dockerfile-Zend</a>
 
 	To run the docker file 
 	
