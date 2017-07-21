@@ -29,6 +29,10 @@ Following things have been followed to develop this project.
 	* docker pull abdulnizam/tradetracker:zendframework for zend
 	* docker pull abdulnizam/tradetracker:symfony for symfony
 
+	a) <a href="https://github.com/Freniz/TradeTrackerProjects/blob/integration/DockerFile/symfony/Dockerfile">Dockerfile-Symfony</a>
+
+	b) <a href="https://github.com/Freniz/TradeTrackerProjects/blob/integration/DockerFile/zend/Dockerfile">Dockerfile-Zend</a>
+
 11) Have used gulp to compile the CSS pre-processor
 	Require:
 		have used Node to install the following packages
@@ -64,9 +68,9 @@ b) Zend
 	2) Run phpunit
 
 
-Document to read 
-	 AngularJs - https://docs.angularjs.org/tutorial/step_02
-	
+Documents to read 
+	 
+	* AngularJs - https://docs.angularjs.org/tutorial/step_02
 	* Boostrap - http://getbootstrap.com/components/
 	* Symfony - https://symfony.com/doc/3.1/index.html
 	* less - http://lesscss.org/
