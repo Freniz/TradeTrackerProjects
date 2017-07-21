@@ -1,0 +1,81 @@
+.single-trade-item {
+  border: 1px solid #dfdede;
+  box-shadow: 2px 5px 10px #dfdede;
+  margin: 15px auto;
+  padding: 5px;
+  position: relative;
+}
+.trade-content {
+  padding: 15px;
+}
+.trade-content h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.trade-content h4 a {
+  color: #777;
+}
+.trade-content p {
+  color: #999;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.3333;
+}
+.trade-date {
+  position: absolute;
+  background: #ee3823;
+  top: 35px;
+  left: 5px;
+  color: #fff;
+  border-radius: 0 25px 25px 0;
+  padding: 5px 15px;
+  font-weight: 700;
+}
+.more-btn {
+  background: #ee3823;
+  border-radius: 2px;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  margin: 30px auto auto auto;
+  text-align: center;
+  width: 110px;
+  color: #f1f1f1;
+}
+.trade-img {
+  width: 100%;
+  height: auto;
+}
+#trade-navbar {
+  background-color: #ee3823;
+  color: #FFFFFF;
+}
+.row2 {
+  padding-bottom: 20px;
+}
+.trade-navbar-input {
+  padding: 11px 16px;
+  border: 0 none;
+  outline: 0 none;
+  border-radius: 2px 0 0 2px;
+  font-size: 15px;
+  color: #000;
+}
+.trade-navbar-button {
+  color: #FFFFFF;
+  padding: 10px 0;
+  border: 1px solid #5487c6;
+  height: 43px;
+  cursor: pointer;
+  background-color: #5487c6;
+  border-radius: 0 2px 2px 0;
+}
+.smallsearch {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.menu {
+  cursor: pointer;
+}

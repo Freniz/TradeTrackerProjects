@@ -1,0 +1,55 @@
+
+<div ng-app="myApp" ng-controller="myCtrl">
+    <div id="trade-navbar">
+        <div class="container">
+            
+            <div class="row row2">
+                <div class="col-sm-12">
+                    <h1 style="margin:0px;"><span class="">TradeTracker.com</span></h1>
+                </div>
+                <div class="trade-navbar-search smallsearch col-sm-11 col-xs-11">
+                    <div class="row">
+                        <input ng-model="url" class="trade-navbar-input col-xs-11" type="" placeholder="Paste your URL here ..." name="">
+                        <button ng-click="myFunc()" class="trade-navbar-button col-xs-1">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <h3 ng-if="List === false"  style="margin:10px;"><span class="">Result Print Here ...</span></h3>
+        <iframe ng-if="List === true" iframe-set-width style="border:none" ng-src="{{trusted_url}}" class="col-md-12">
+        </iframe> 
+    </div>
+</div>
+<script>
+    var BASE_URL = "<?php echo $this->baseURL; ?>";
+    angular.module('myApp', [])
+      .controller('myCtrl', ['$scope','$sce', function($scope, $sce) {
+        $scope.List = false;
+        $scope.Load = false;
+        $scope.myFunc = function() {
+            $scope.trusted_url = $sce.trustAsResourceUrl(BASE_URL+"list?url="+encodeURIComponent($scope.url));
+            $scope.List = true;
+            $scope.Load = true;
+
+        };
+      }])
+      .directive('iframeSetWidth', [function(){
+        return {
+            restrict: 'A',
+            link: function(scope, element, attrs){
+                element.on('load', function($scope){
+                    var iFrameHeight = element[0].contentWindow.document.body.scrollHeight + 'px';
+                    var iFrameWidth = '100%';
+                    element.css('width', iFrameWidth);
+                    element.css('height', iFrameHeight);
+
+                })
+            }
+        }}]);
+</script>
