@@ -12,17 +12,18 @@ Following things have been followed to develop this project.
 3) Used Boostrap for responsive / adaptive layout
 4) Used Symfony and ZendFramework for the back-end
 5) No database have been used
-6) Have limited to 32MB of memory. manually used in code ini_set("memory_limit","256M"); 
+6) Have limited to 32MB of memory. manually used in code ini_set("memory_limit","32M");
+7) Displaying processed data in real-time 
 
-7) Have followed coding standards (PSR-2)
-8) Have used PHPunit Test almost for all logic
+8) Have followed coding standards (PSR-2)
+9) Have used PHPunit Test almost for all logic
 
-9) Have used less and sass CSS pre-processor.
+10) Have used less and sass CSS pre-processor.
 
 	* Less in Zend framwork 
 	* Sass in Symfony
 
-10) Have generated Docker Image in code repository.
+11) Have generated Docker Image in code repository.
 
 	Followed this document - https://docs.docker.com/get-started/
 
@@ -32,6 +33,10 @@ Following things have been followed to develop this project.
 
 		* docker pull abdulnizam/tradetracker:zendframework for zend
 		* docker pull abdulnizam/tradetracker:symfony for symfony
+
+		After pulldown in local : 
+
+			docker run -p 8002:80 tradetracker:symfony (or) docker run -p 8002:80 tradetracker:zendframework
 
 	a) <a href="https://github.com/Freniz/TradeTrackerProjects/blob/integration/DockerFiles/symfony/Dockerfile">Dockerfile-Symfony</a>
 
@@ -43,7 +48,7 @@ Following things have been followed to develop this project.
 		2) docker run -p {port}:80 tradetracker:{tag} eg, docker run -p 8002:80 tradetracker:symfony
 
 
-11) Have used gulp to compile the CSS pre-processor
+12) Have used gulp to compile the CSS pre-processor
 	Require:
 		have used Node to install the following packages
 			follow the document to install node - https://nodejs.org/en/
