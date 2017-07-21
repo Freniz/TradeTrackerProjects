@@ -29,7 +29,7 @@ class DefaultController extends Controller
         // $url = 'http://pf.tradetracker.net/?aid=1&type=xml&encoding=utf-8&fid=251713&categoryType=2&additionalType=2&limit=10';
         $results = new TrackerXMLRenderer($url);
         $timeResults = $results->parseAndRender();
-        $return_results = '<button type="button" class="btn btn-success btn-lg processtime">Processing Time : '.$timeResults.'</button>';
+        $return_results = '<button type="button" class="btn btn-success btn-lg processtime">Processing Time : '.$timeResults.'s</button>';
         echo $return_results;
 
         return $this->render('default/list.html.twig', [
