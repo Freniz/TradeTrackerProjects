@@ -3,13 +3,13 @@
 
 Here we can see two projects developed using Symfony and ZendFramework.
 
-Intially the project was built using ZendFramework but later decided to implement in Symfony.
+Initially the project was built using ZendFramework but later decided to implement in Symfony.
 
 Following things have been followed to develop this project.
 
 1) HTML5 based markup
 2) Used AngularJs to make the interface interactive
-3) Used Boostrap for responsive / adaptive layout
+3) Used Bootstrap for responsive / adaptive layout
 4) Used Symfony and ZendFramework for the back-end
 5) No database have been used
 6) Have limited to 32MB of memory. manually used in code ini_set("memory_limit","32M");
@@ -90,9 +90,9 @@ Your code should:
 
 #Problem Solving 
 
-Here we are dealing with massive xml api by passing N limit to retriving the data. 
+Here we are dealing with massive xml api by passing N limit to retrieving the data. 
 
-Since it has almost 2+ GB to downlaod the whole data, it hard to get the data by api.
+Since it has almost 2+ GB to download the whole data, it hard to get the data by api.
 
 Here we are using some method to access the xml data as much quicker.
 
@@ -160,7 +160,7 @@ b) Zend
 Documents to read 
 	 
 	* AngularJs - https://docs.angularjs.org/tutorial/step_02
-	* Boostrap - http://getbootstrap.com/components/
+	* Bootstrap - http://getbootstrap.com/components/
 	* Symfony - https://symfony.com/doc/3.1/index.html
 	* less - http://lesscss.org/
 	* sass - http://sass-lang.com/guide
