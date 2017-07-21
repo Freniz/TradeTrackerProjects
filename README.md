@@ -1,4 +1,4 @@
-TradeTracker.com Assessment work
+# TradeTracker.com Assessment work
 
 
 Here we can see two projects developed using Symfony and ZendFramework.
@@ -50,6 +50,80 @@ Following things have been followed to develop this project.
 			* gulp-concat - npm install --global gulp-concat
 			* gulp-less - npm install --global gulp-less
 			* gulp-sass - npm instal --global gulp-sass 
+
+
+# The assignment
+
+The assignment consists of two parts that should take about an equal amount of time (make sure that neither part gets neglected due to the other).
+
+Part 1: User Interface
+
+Create a page that will allow the user to submit a URL of a product feed. On submitting the form, the URL should be processed (as described in following section), and the results of that processing should be shown to the user.
+
+Part 2: Feed Processing
+
+The feed processing function should be able to handle very large feeds of a fixed format. For an example feed, the following test can be used:
+
+Given URL LINK http://pf.tradetracker.net/?aid=1&type=xml&encoding=utf-8&fid=251713&categoryType=2&additionalType=2
+
+The feed is a few hundred megabytes large and contains thousands of products. The basic structure of the feed is described in appendix section.
+
+Your code should:
+
+	1. Fetch the contents of given URL without downloading entire file beforehand,
+	2. Extract the following fields:
+	a. productID
+	b. name
+	c. description
+	d. price & currency
+	e. category (all)
+	f. productURL
+	g. imageURL
+	3. Render above extracted data in user-friendly way on front-end
+
+#Problem Solving 
+
+Here we are dealing with massive xml api by passing N limit to retriving the data. 
+
+Since it has almost 2+ GB to downlaod the whole data, it hard to get the data by api.
+
+Here we are using some method to access the xml data as much quicker.
+
+	The simplest way would be to use XMLReader to get to each node, then use SimpleXML to access them.
+
+	This way, we keep the memory usage low because we are treating one node at a time and we are still leverage SimpleXML's ease of use. 
+
+	For Example:
+
+		<pre>
+
+			N can be 1, 10, 100, 1000, 10000 ...
+
+			$url = 'http://pf.tradetracker.net/?aid=1&type=xml&encoding=utf-8&fid=251713&categoryType=2&additionalType=2&limit=N';
+			
+			public function __construct($url)
+		    {
+		        $this->xmlrender = new XMLReader;
+		        $this->xmlrender->open($url);
+		    }
+
+			public function parseAndRender()
+		    {
+		        $doc = new DOMDocument;
+		        
+		        while ($this->xmlrender->read() && $this->xmlrender->name !== 'product');
+		        
+		        while ($this->xmlrender->name === 'product') {
+		            $node = simplexml_import_dom($doc->importNode($this->xmlrender->expand(), true));
+		            
+		            echo $this->renderNode($node);
+		            
+		            $this->xmlrender->next('product');
+		        }
+		    }
+		</pre>
+
+The following above method we have resolved the problems, for to access the massive XML data.
 
 
 #PHPUNIT

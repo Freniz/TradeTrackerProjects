@@ -32,7 +32,7 @@ class Tracker_XMLRenderer
                             </div>
                             <div class="trade-content">
                                 <h4><a href="'.$this->urlDecode($node->productURL).'" target="_blank">'.$this->trimString($node->name, '30').'</a></h4>
-                                <h5><span class="text-info">'.ucfirst($node->categories->category->attributes()->name).'</span><h5>
+                                <h5><span class="text-info">'.ucfirst($node->categories->category->attributes()->path).'</span><h5>
                                 <p>'.$this->trimString($node->description, '70').'</p>
                                 <a href="'.$this->urlDecode($node->productURL).'" target="_blank" class="more-btn">View More</a>
                             </div>

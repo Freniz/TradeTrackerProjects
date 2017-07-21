@@ -1,4 +1,5 @@
 <?php
+ini_set("memory_limit","32M");
 
 // Define path to application directory
 defined('APPLICATION_PATH')
