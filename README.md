@@ -38,6 +38,8 @@ Following things have been followed to develop this project.
 
 			docker run -p 8002:80 tradetracker:symfony (or) docker run -p 8002:80 tradetracker:zendframework
 
+			Access - http://localhost:8002/
+
 	a) <a href="https://github.com/Freniz/TradeTrackerProjects/blob/integration/DockerFiles/symfony/Dockerfile">Dockerfile-Symfony</a>
 
 	b) <a href="https://github.com/Freniz/TradeTrackerProjects/blob/integration/DockerFiles/zend/Dockerfile">Dockerfile-Zend</a>
@@ -46,7 +48,8 @@ Following things have been followed to develop this project.
 	
 		1) docker build -t tradetracker:{tag} . eg, docker build -t tradetracker:symfony .
 		2) docker run -p {port}:80 tradetracker:{tag} eg, docker run -p 8002:80 tradetracker:symfony
-
+         
+        Access - http://localhost:8002/
 
 12) Have used gulp to compile the CSS pre-processor
 	Require:
