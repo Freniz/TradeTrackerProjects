@@ -31,9 +31,9 @@ Following things have been followed to develop this project.
 
 	Docker Projects - <a href="https://github.com/Freniz/TradeTrackerDockerProjects">Docker Projects</a>
 
-		* docker pull abdulnizam/tradetracker:zendframework for zend
 		* docker pull abdulnizam/tradetracker:symfony for symfony
-
+		* docker pull abdulnizam/tradetracker:zendframework for zend
+		
 		After pulldown in local : 
 
 			docker run -p 8002:80 tradetracker:symfony (or) docker run -p 8002:80 tradetracker:zendframework
