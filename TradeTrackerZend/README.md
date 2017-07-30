@@ -1,7 +1,25 @@
 # TradeTracker.com Assessment work  - ZendFramework
 
 
-Following things have been followed to develop this project.
+# Composer 
+
+https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx
+
+Before run the symfony application please run the composer 
+
+cd TradeTrackerProjects/TradeTrackerSymfony
+
+sudo composer install
+
+&&
+
+cd TradeTrackerDockerProjects/TradeTrackerSymfony
+
+sudo composer install
+
+
+# Following things have been followed to develop this project.
+
 
 1) HTML5 based markup
 2) Used AngularJs to make the interface interactive
