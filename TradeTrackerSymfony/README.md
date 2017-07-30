@@ -13,7 +13,7 @@ cd TradeTrackerProjects/TradeTrackerSymfony
 
 sudo composer install
 
-&&
+(or)
 
 cd TradeTrackerDockerProjects/TradeTrackerSymfony
 
