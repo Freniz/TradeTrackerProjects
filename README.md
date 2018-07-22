@@ -2,7 +2,7 @@
 
 Demo : http://ec2-34-252-59-205.eu-west-1.compute.amazonaws.com:8002/web/ - symfony
 
-Example link to use - http://pf.tradetracker.net/?aid=1&type=xml&encoding=utf-8&fid=251713&categoryType=2&additionalType=2&limit=10
+Example link to use :- http://pf.tradetracker.net/?aid=1&type=xml&encoding=utf-8&fid=251713&categoryType=2&additionalType=2&limit=10
 
 Here we can see two projects developed using Symfony and ZendFramework.
 
